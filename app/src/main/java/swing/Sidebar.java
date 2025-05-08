@@ -10,18 +10,18 @@ public class Sidebar extends JPanel {
         add(Box.createVerticalStrut(10));
         add(new SideButtons("Home"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Characters"));
+        add(new SideButtons("All Characters"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Tier List"));
+        add(new SideButtons("Personal Top 5"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Songs"));
+        add(new SideButtons("Leo/Need"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Cover Alts"));
+        add(new SideButtons("More More Jump"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Events"));
+        add(new SideButtons("Vivid Bad Squad"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Cards"));
+        add(new SideButtons("Wonderland x Showtime"));
         add(Box.createVerticalStrut(10));
-        add(new SideButtons("Tools"));
+        add(new SideButtons("Nightcord at 25:00"));
     }
 }

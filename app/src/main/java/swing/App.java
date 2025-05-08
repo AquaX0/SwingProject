@@ -12,13 +12,12 @@ import javax.swing.plaf.basic.BasicSplitPaneUI;
 public class App extends JFrame {
 
     public App() {
-
         setTitle("Project Sekai Characters");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1920, 1080);
         setLayout(new BorderLayout());
     
-        Characters charGrid = new Characters();
+        CharacterData charGrid = new CharacterData();
         JScrollPane scrollPane = new JScrollPane(charGrid);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.getVerticalScrollBar().setUnitIncrement(32);
@@ -27,7 +26,7 @@ public class App extends JFrame {
         splitPane.setDividerLocation(240);
         splitPane.setLeftComponent(new Sidebar());
         splitPane.setRightComponent(scrollPane); 
-        splitPane.setDividerSize(10);
+        splitPane.setDividerSize(10); 
 
         splitPane.setUI(new BasicSplitPaneUI() {
             @Override
