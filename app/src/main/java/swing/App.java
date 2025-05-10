@@ -24,7 +24,7 @@ public class App extends JFrame {
 
         JSplitPane splitPane = new JSplitPane();    
         splitPane.setDividerLocation(240);
-        splitPane.setLeftComponent(new Sidebar());
+        splitPane.setLeftComponent(new Sidebar(splitPane));
         splitPane.setRightComponent(scrollPane); 
         splitPane.setDividerSize(10); 
 

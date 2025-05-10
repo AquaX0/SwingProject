@@ -1,4 +1,5 @@
 package swing;
+
 import java.awt.*;
 import java.net.URL;
 import javax.swing.*;
@@ -9,7 +10,13 @@ public class Card extends JButton {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         setBackground(Color.WHITE);
 
-        Dimension size = new Dimension(200, 250);
+        // Add a border with max visual size
+        setBorder(BorderFactory.createCompoundBorder(
+            BorderFactory.createLineBorder(Color.LIGHT_GRAY, 2), // visible border
+            BorderFactory.createEmptyBorder(10, 10, 10, 10)       // inner padding
+        ));
+
+        Dimension size = new Dimension(300, 250);
         setPreferredSize(size);
         setMaximumSize(size);
         setMinimumSize(size);

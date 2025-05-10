@@ -62,7 +62,6 @@ public class CharacterDetail extends JFrame {
         rightPanel.add(infoPanel, BorderLayout.NORTH);
         rightPanel.add(bioScroll, BorderLayout.CENTER);
 
-        // === MAIN LAYOUT ===
         add(leftPanel, BorderLayout.WEST);
         add(rightPanel, BorderLayout.CENTER);
     }
