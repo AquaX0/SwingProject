@@ -14,10 +14,10 @@ public class App extends JFrame {
     public App() {
         setTitle("Project Sekai Characters");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(1920, 1080);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLayout(new BorderLayout());
     
-        CharacterData charGrid = new CharacterData();
+        CharacterData charGrid = new CharacterData(null, true); 
         JScrollPane scrollPane = new JScrollPane(charGrid);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.getVerticalScrollBar().setUnitIncrement(32);

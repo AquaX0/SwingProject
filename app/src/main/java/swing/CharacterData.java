@@ -10,12 +10,12 @@ public class CharacterData extends JPanel {
     private List<Character> allCharacters;
     private int columns = 4; // Default number of columns
 
-    public CharacterData() {
-        this(null, false);
-    }
-
     public CharacterData(String groupFilter) {
         this(groupFilter, false);
+    }
+
+    public CharacterData() {
+        this(null, false);
     }
 
     public CharacterData(String groupFilter, boolean isHome) {
