@@ -1,4 +1,5 @@
 package swing;
+
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -13,14 +14,22 @@ public class Filter implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JPanel filteredPanel = new CharacterData(groupName); 
+        JPanel newPanel;
 
-        JScrollPane scrollPane = new JScrollPane(filteredPanel);
+        if ("Home".equalsIgnoreCase(groupName)) {
+            newPanel = new CharacterData(null, true);
+        } else if ("All".equalsIgnoreCase(groupName)) {
+            newPanel = new CharacterData(null, false);
+        } else {
+            newPanel = new CharacterData(groupName, false);
+        }
+
+        JScrollPane scrollPane = new JScrollPane(newPanel);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.getVerticalScrollBar().setUnitIncrement(32);
-        scrollPane.setBorder(null); 
+        scrollPane.setBorder(null);
 
         splitPane.setDividerLocation(240);
-        splitPane.setRightComponent(scrollPane); 
+        splitPane.setRightComponent(scrollPane);
     }
 }

@@ -25,29 +25,14 @@ public class Sidebar extends JPanel {
         add(Box.createVerticalStrut(10));
         add(createButton("Vivid BAD SQUAD", "Vivid BAD SQUAD"));
         add(Box.createVerticalStrut(10));
-        add(createButton("Wonderland x Showtime", "Wonderlands X Showtime"));
+        add(createButton("Wonderlands X Showtime", "Wonderlands X Showtime"));
         add(Box.createVerticalStrut(10));
-        add(createButton("Nightcord at 25:00", "Nigthcord at 25:00"));
+        add(createButton("Nightcord at 25:00", "Nightcord at 25:00"));
     }
 
     private JButton createButton(String label, String groupFilter) {
         JButton button = new SideButtons(label);
-        button.addActionListener(e -> {
-            JPanel newPanel;
-            if ("Home".equals(groupFilter)) {
-                newPanel = new CharacterData(null, true); // show first 15
-            } else if ("All".equals(groupFilter)) {
-                newPanel = new CharacterData(null, false); // show all
-            } else {
-                newPanel = new CharacterData(groupFilter, false);
-            }
-
-            JScrollPane scrollPane = new JScrollPane(newPanel);
-            scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-            scrollPane.getVerticalScrollBar().setUnitIncrement(32);
-
-            splitPane.setRightComponent(scrollPane);
-        });
+        button.addActionListener(new Filter(splitPane, groupFilter));
         return button;
     }
 }

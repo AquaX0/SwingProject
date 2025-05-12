@@ -69,18 +69,17 @@ public class CharacterData extends JPanel {
                         "A girl dreaming of being an international musical star. Though Nene lost confidence in her ability to sing during a rehearsal for an important show, this led her to reaffirm her passion for singing. Together with the other Wonderlands X Showtime members, she is determined to take in the many experiences the world has to offer."),
                 new Character("Kamishiro Rui", "/Rui.png", "Wonderlands X Showtime", "Soda candy", "June 24th",
                         "A carefree genius director. Formerly a solo performer, Rui found a new home among the Wonderlands X Showtime members, who accepted his bold ideas. In his search for a way for the troupe to stay together despite chasing different dreams, he has devised an arrangement that lets them put on shows together while each still following their chosen path."),
-                new Character("Yoisaki Kanade", "/Kanade.png", "Nigthcord at 25:00", "Instant noodles, Canned foods",
+                new Character("Yoisaki Kanade", "/Kanade.png", "Nightcord at 25:00", "Instant noodles, Canned foods",
                         "February 10th",
                         "Nightcord at 25:00's composer. Kanade was delighted as her songs started to evoke more and more emotion from Mafuyu, but this happiness was cut short when Mafuyu's mother asked Kanade to stay away from her daughter. Finding this woman's behavior disconcerting. Kanade refused and chose to stick by Mafuyu's side."),
-                new Character("Asahina Mafuyu", "/Mafuyu.png", "Nigthcord at 25:00", "Mom's home cooking",
+                new Character("Asahina Mafuyu", "/Mafuyu.png", "Nightcord at 25:00", "Mom's home cooking",
                         "January 27th",
-                        "Nigthcord at 25:00's lyricist. Mafuyu lost her sense of self amid pressure to be the 'good, kind girl' her mother expected her to be, but found refuge within music and Nigthcord at 25:00. Faced with the threat of her only safe space being taken away, she has run away from home and sought Kanade's help."),
-                new Character("Shinonome Ena", "/Ena.png", "Nigthcord at 25:00", "Pancakes, Cheesecake", "April 30th",
-                        "Nigthcord at 25:00's illustrator. Despite wrestling with her belief that she has no artistic talent and being at the receiving end of the criticism. Ena persists in creating art. She has a straightforward personality and was initially frustrated with Mafuyu for not expressing her true feelings to her mother. However, noticing the changes in Mafuyu since they first met, Ena has resolved to look after her dear friend."),
-                new Character("Akiyama Mizuki", "/Mizuki.png", "Nigthcord at 25:00", "Curry rice, French fries",
+                        "Nightcord at 25:00's lyricist. Mafuyu lost her sense of self amid pressure to be the 'good, kind girl' her mother expected her to be, but found refuge within music and Nightcord at 25:00. Faced with the threat of her only safe space being taken away, she has run away from home and sought Kanade's help."),
+                new Character("Shinonome Ena", "/Ena.png", "Nightcord at 25:00", "Pancakes, Cheesecake", "April 30th",
+                        "Nightcord at 25:00's illustrator. Despite wrestling with her belief that she has no artistic talent and being at the receiving end of the criticism. Ena persists in creating art. She has a straightforward personality and was initially frustrated with Mafuyu for not expressing her true feelings to her mother. However, noticing the changes in Mafuyu since they first met, Ena has resolved to look after her dear friend."),
+                new Character("Akiyama Mizuki", "/Mizuki.png", "Nightcord at 25:00", "Curry rice, French fries",
                         "August 27th",
-                        "Nigthcord at 25:00's video editor. Mizuki wanted to do something about the worsening relationship between Mafuyu and her mother, but felt unable to offer anything knowing that they are running away from their problems. However, Mizuki realized that there are things that can be gained by running away, and told Mafuyu that doing so is always an option.")
-
+                        "Nightcord at 25:00's video editor. Mizuki wanted to do something about the worsening relationship between Mafuyu and her mother, but felt unable to offer anything knowing that they are running away from their problems. However, Mizuki realized that there are things that can be gained by running away, and told Mafuyu that doing so is always an option.")
         ));
     }
 

@@ -11,6 +11,5 @@ public class SideButtons extends JButton {
         setAlignmentX(CENTER_ALIGNMENT);
         setBorder(BorderFactory.createEmptyBorder());
         setMaximumSize(new Dimension(Integer.MAX_VALUE, 50));
-        
     }
 }
